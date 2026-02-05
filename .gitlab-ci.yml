@@ -1,0 +1,42 @@
+# Snyk Full Platform - GitLab CI/CD
+#
+# Prerequisites:
+# - Set SNYK_TOKEN as a CI/CD variable in GitLab (Settings > CI/CD > Variables)
+# - Set SNYK_API as a CI/CD variable if using US region (https://api.us.snyk.io)
+
+stages:
+  - test
+
+# Open Source Scanning - npm dependencies
+snyk-os:
+  image: node:18
+  stage: test
+  allow_failure: true
+  variables:
+    SNYK_TOKEN: $SNYK_TOKEN
+    SNYK_API: https://api.us.snyk.io
+    SNYK_CFG_ORG: $SNYK_ORG
+  script:
+    - npm install -g snyk
+    - npm install --ignore-scripts
+    - snyk monitor --project-name=$CI_PROJECT_NAME
+    - snyk test
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"
+
+# Code Scanning - SAST
+snyk-code:
+  image: node:18
+  stage: test
+  allow_failure: true
+  variables:
+    SNYK_TOKEN: $SNYK_TOKEN
+    SNYK_API: https://api.us.snyk.io
+    SNYK_CFG_ORG: $SNYK_ORG
+  script:
+    - npm install -g snyk
+    - snyk code test
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"
