@@ -1,0 +1,1783 @@
+parsing and downloads finished in 56 ms.
+json schema validated in 243 ms
+snyk-os   starting node:18 (test)
+snyk-code starting node:18 (test)
+snyk-os   copied to docker volumes in 7.83 s
+snyk-code copied to docker volumes in 7.86 s
+snyk-code $ npm install -g snyk
+snyk-os   $ npm install -g snyk
+snyk-code > npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+snyk-os   > npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+snyk-code > still running...
+snyk-os   > still running...
+snyk-os   > 
+snyk-os   > added 31 packages in 18s
+snyk-os   > 
+snyk-os   > 8 packages are looking for funding
+snyk-os   >   run `npm fund` for details
+snyk-os   $ npm install --ignore-scripts
+snyk-code > 
+snyk-code > added 31 packages in 18s
+snyk-code > 
+snyk-code > 8 packages are looking for funding
+snyk-code >   run `npm fund` for details
+snyk-code $ snyk code test
+snyk-code > 
+snyk-code > Testing /builds/wagnerm-Duranium/juice-shop-goof ...
+snyk-code > 
+snyk-code > Open Issues
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c55dadb4-d7f5-410d-9cc7-b97bff3a582c
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 249
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 821f0776-96a1-4f20-b729-b1bfc4066069
+snyk-code >    Path: test/api/memoryApiSpec.ts, line 91
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 097b74cb-9bcb-41fb-a696-7e67b4826a27
+snyk-code >    Path: test/server/verifySpec.ts, line 309
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: c7cc2fc4-8d8a-458f-83e1-f72fab804eb5
+snyk-code >    Path: test/server/verifySpec.ts, line 297
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 63394088-a667-4b1e-bb53-1e7090f37303
+snyk-code >    Path: test/server/verifySpec.ts, line 275
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Secret
+snyk-code >    Finding ID: 54ed6e78-39b9-43ee-8351-91d65b67053c
+snyk-code >    Path: test/api/2faSpec.ts, line 149
+snyk-code >    Info: Hardcoded value is used as a cipher key (in jsonwebtoken.default.sign). Generate the value with a cryptographically strong random number generator and do not hardcode it in source code.
+snyk-code > 
+snyk-code >  ✗ [LOW] Cleartext Transmission - HTTP Instead of HTTPS
+snyk-code >    Finding ID: 6bd5ca7d-50fe-41e1-9558-e5bb8ba45d8f
+snyk-code >    Path: test/api/productReviewApiSpec.ts, line 68
+snyk-code >    Info: http.get uses HTTP which is an insecure protocol and should not be used in code due to cleartext transmission of information. Data in cleartext in a communication channel can be sniffed by unauthorized actors. Consider using the https module instead.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Password Hash With Insufficient Computational Effort
+snyk-code >    Finding ID: 0899508f-51ec-4371-87db-8326dd9d079d
+snyk-code >    Path: Gruntfile.js, line 76
+snyk-code >    Info: crypto.createHash hash (used in crypto.createHash) is insecure. Consider changing it to a secure hashing algorithm.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Password Hash With Insufficient Computational Effort
+snyk-code >    Finding ID: 26d689c1-a02a-4cdb-a6d7-b519f3d3feb2
+snyk-code >    Path: lib/insecurity.ts, line 43
+snyk-code >    Info: crypto.default.createHash hash (used in crypto.default.createHash) is insecure. Consider changing it to a secure hashing algorithm.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 0a7c8b69-f488-41d7-950b-064d5508d3f5
+snyk-code >    Path: test/cypress/e2e/administration.spec.ts, line 4
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 09904e97-fc6e-4e68-9e5e-b1ae3c2e4821
+snyk-code >    Path: test/cypress/e2e/b2bOrder.spec.ts, line 6
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 2f093ebe-7429-4333-a105-ecf60cc12e57
+snyk-code >    Path: test/cypress/e2e/b2bOrder.spec.ts, line 37
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 3287beec-3ba7-47f7-9726-86603fc23f65
+snyk-code >    Path: test/cypress/e2e/basket.spec.ts, line 4
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: f76a9986-5420-4e69-b3d9-6f48b62dcf40
+snyk-code >    Path: test/cypress/e2e/changePassword.spec.ts, line 5
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 441f7b3d-f9c8-4da0-9f63-4b735b56821d
+snyk-code >    Path: test/cypress/e2e/changePassword.spec.ts, line 24
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 172d591f-4ee7-4380-bddb-61d0da8916a7
+snyk-code >    Path: test/cypress/e2e/changePassword.spec.ts, line 31
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 922f3d7d-2219-4b6b-a1e9-97bb4455f008
+snyk-code >    Path: test/cypress/e2e/chatbot.spec.ts, line 3
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 2ce76c80-d53e-4617-8e66-8238c3533163
+snyk-code >    Path: test/cypress/e2e/complain.spec.ts, line 4
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 373bb29a-f0a8-4bd2-96df-6b561d0f94bb
+snyk-code >    Path: test/cypress/e2e/contact.spec.ts, line 11
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 709d30ab-f470-4872-8ebd-678b3e069c20
+snyk-code >    Path: test/cypress/e2e/contact.spec.ts, line 47
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 6283e2f2-b242-4e30-9dcf-1fb777c6b8ea
+snyk-code >    Path: test/cypress/e2e/dataErasure.spec.ts, line 3
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 72efed05-b254-44f2-be26-f53ed848d4b5
+snyk-code >    Path: test/cypress/e2e/dataExport.spec.ts, line 24
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 6552d90c-1140-47c1-a7d8-72b202e1e279
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 8
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 56d5cad9-0c7e-4d81-acc0-66a557b32f3d
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 53
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 30a82c41-da56-43fd-b151-63e07d8f3f3f
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 76
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 2a2a2d25-38b5-4d3c-a406-2e07b53e3a1c
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 120
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: de3319ee-b059-4154-879c-a109b1c7a2e0
+snyk-code >    Path: test/cypress/e2e/profile.spec.ts, line 3
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: cde62e41-5f5d-4da9-ae39-155b13e1ec4a
+snyk-code >    Path: test/cypress/e2e/register.spec.ts, line 9
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 975b06a7-fc25-4d8b-a346-04aa624e4eb4
+snyk-code >    Path: test/cypress/e2e/restApi.spec.ts, line 4
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: bb5e1d6f-357e-4502-906f-4e8b25e2d6d6
+snyk-code >    Path: test/cypress/e2e/restApi.spec.ts, line 81
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: df0f3173-8948-42d6-9575-106de7ea430a
+snyk-code >    Path: test/cypress/e2e/search.spec.ts, line 55
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: 7b53e8b5-e72f-45e6-bd61-fc4729361f91
+snyk-code >    Path: test/cypress/e2e/search.spec.ts, line 82
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Credentials
+snyk-code >    Finding ID: de895472-7205-4f26-b6a4-7ef1b947b8ca
+snyk-code >    Path: test/cypress/e2e/totpSetup.spec.ts, line 5
+snyk-code >    Info: Do not hardcode credentials in code. Found hardcoded credential used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 8d167ec3-2e04-4c8f-8306-cac2dce09ad1
+snyk-code >    Path: test/server/verifySpec.ts, line 263
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: f14730ef-72bb-4128-bb56-79c54b16e6cd
+snyk-code >    Path: test/server/currentUserSpec.ts, line 33
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 82050bba-c93c-4c8d-98eb-f2bd604b3f44
+snyk-code >    Path: test/server/currentUserSpec.ts, line 31
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 785b43a1-9213-4e0a-a57f-0252e0cc52a6
+snyk-code >    Path: test/cypress/e2e/totpSetup.spec.ts, line 7
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 940d2131-1cba-4d63-81b5-69a56bba714e
+snyk-code >    Path: test/cypress/e2e/forgedJwt.spec.ts, line 22
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c0599dfa-7fb9-4b0b-9dea-823dcad5925c
+snyk-code >    Path: test/api/2faSpec.ts, line 19
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d9ac044b-468e-4382-9318-20e404f5c611
+snyk-code >    Path: test/api/2faSpec.ts, line 169
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 64f62ef1-e410-4044-91ee-4ed20b005270
+snyk-code >    Path: test/api/2faSpec.ts, line 195
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 04732f1c-9a57-434d-b52b-e5404412db6d
+snyk-code >    Path: test/api/2faSpec.ts, line 231
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: a55ad5ac-8b2e-47b2-bd97-acae573ff7d4
+snyk-code >    Path: test/api/2faSpec.ts, line 277
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d1795d79-0fe6-475b-a54b-4fe9a50d822c
+snyk-code >    Path: test/api/2faSpec.ts, line 306
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f4b712af-5b24-4ff4-8d0c-5c160e4003d5
+snyk-code >    Path: test/api/2faSpec.ts, line 335
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 23f73266-c2b2-41a7-90ab-e5a617bcaa2d
+snyk-code >    Path: test/api/2faSpec.ts, line 364
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 86ba922c-f158-482e-bdf2-58599467c4ee
+snyk-code >    Path: test/api/2faSpec.ts, line 393
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d3aa47d4-52cb-4ae2-8eeb-01aa490b81de
+snyk-code >    Path: test/api/2faSpec.ts, line 430
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 3bf4e31c-1fe3-4cea-acbf-6752dedb5bf9
+snyk-code >    Path: test/api/addressApiSpec.ts, line 20
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 3d08f5d0-17e8-4f49-b836-92ba98fda7aa
+snyk-code >    Path: test/api/basketApiSpec.ts, line 25
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 631af5b3-6e39-45d2-b38d-60a680640606
+snyk-code >    Path: test/api/basketApiSpec.ts, line 101
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f271c6bc-d122-4b42-9552-286b5dc4a025
+snyk-code >    Path: test/api/basketItemApiSpec.ts, line 21
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: abd089be-34e7-4f2d-a108-9b0fa265d157
+snyk-code >    Path: test/api/chatBotSpec.ts, line 18
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b3cdb6f1-ac58-4491-9b77-ef9005d23afa
+snyk-code >    Path: test/api/chatBotSpec.ts, line 56
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 551eca8f-f6af-4c6e-9092-b85c55f8f05a
+snyk-code >    Path: test/api/chatBotSpec.ts, line 77
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4d99c5b5-4b70-4f01-b9fa-502792f22620
+snyk-code >    Path: test/api/chatBotSpec.ts, line 108
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b4ec7c0d-8c90-40e0-a9da-df04a8c7d323
+snyk-code >    Path: test/api/chatBotSpec.ts, line 140
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 8f24e077-1aad-49ec-a2d2-10dc2ace0037
+snyk-code >    Path: test/api/chatBotSpec.ts, line 174
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: dba47a51-02a7-44bd-a6f8-969e151f6e64
+snyk-code >    Path: test/api/chatBotSpec.ts, line 205
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 6f636ccd-f351-4d21-bd05-b05ace6b769b
+snyk-code >    Path: test/api/chatBotSpec.ts, line 250
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 73839020-7bb4-426c-ab20-ec1577869b2c
+snyk-code >    Path: test/api/chatBotSpec.ts, line 287
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 294fd9bc-469a-4112-bb7d-45e1b73e9a43
+snyk-code >    Path: test/api/chatBotSpec.ts, line 295
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b9195cd4-5f66-49bd-a031-858bd9cfbea9
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 22
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: cdc39c0c-609b-477d-b643-ef8e1f97a675
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 49
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 12b3e04e-f116-496a-86fc-b0a372b0e030
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 78
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: ab3d85a3-bea6-441e-919b-219138b6c162
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 113
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 24222e30-247a-4619-ba55-d8ae99228108
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 153
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 75735708-ff8c-4b6d-b2a1-4bc7fc849878
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 195
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 5fda6b1d-0229-4100-8f22-f3edff2cbcd5
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 235
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: ddef9653-65ae-4101-afd3-6a3146b4e2b8
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 283
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 99412e2a-099b-4e54-bea3-cce8b8b852e2
+snyk-code >    Path: test/api/dataExportApiSpec.ts, line 333
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 92376421-21a0-4bcf-a0a3-0ef5b3a46ac9
+snyk-code >    Path: test/api/deliveryApiSpec.ts, line 23
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 49367f75-04e3-4e29-8dcb-ded661868ea8
+snyk-code >    Path: test/api/deliveryApiSpec.ts, line 52
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 2a34729a-5c3f-4f2a-9ef0-a8042fe4d129
+snyk-code >    Path: test/api/deliveryApiSpec.ts, line 83
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b1758d43-1b96-471d-a77b-dfbe4506d48c
+snyk-code >    Path: test/api/deliveryApiSpec.ts, line 111
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 2a984278-1dc3-438d-bce2-18e7beccf6ca
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 13
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: e8b47f3a-4c57-4b45-91ae-875a3618bf01
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 35
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: da56cc71-eebd-4355-9a47-e991e6e353d0
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 53
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: a4cf4223-f033-4bc0-86ec-48922d87a7c2
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 71
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d0a76fa1-5fc1-425e-8b19-bdc80c7dcf2d
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 89
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4536eb63-9dde-478c-8fef-dec6f4a1ae0e
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 105
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c40fc871-63b7-49e3-96f1-c72bc1683eac
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 129
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 38400b5e-c3c1-4189-9add-6e6c39125752
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 149
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 362ef92a-4a4e-4403-a6b4-a5c3e0aa673a
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 170
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 52c1ab3d-e633-404e-ba3b-2c1dab02bf33
+snyk-code >    Path: test/api/deluxeApiSpec.ts, line 191
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 9f9b75e6-b22d-4453-bce9-3e14f951a37b
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 18
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 0bf9355c-8691-4359-a5b9-1ee46c29b3e4
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 37
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 0b73520e-8062-47eb-a0e9-4a98fd0ef89d
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 64
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 9713453f-3380-4e85-b7fd-b8e275d9df40
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 80
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 7734c547-0db7-4913-8577-ef643220c4f8
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 99
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: aa284913-bdb3-415f-af18-a8622e0cf7be
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 119
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 63794caf-288e-455f-b97a-677b8d23a1bd
+snyk-code >    Path: test/api/erasureRequestApiSpec.ts, line 140
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: cf952a09-1586-43a1-8fc4-49817c987468
+snyk-code >    Path: test/api/feedbackApiSpec.ts, line 119
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 85715e26-5eca-4acc-a303-b91313bfa0d3
+snyk-code >    Path: test/api/feedbackApiSpec.ts, line 152
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c32fc0d1-9a02-4f52-8dca-3433957e96d9
+snyk-code >    Path: test/api/loginApiSpec.ts, line 21
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4126595f-b6bb-4d3d-bbe1-8a69bd9aec26
+snyk-code >    Path: test/api/loginApiSpec.ts, line 30
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 699bf4d7-cf36-495a-b0b5-5e9791d67913
+snyk-code >    Path: test/api/loginApiSpec.ts, line 46
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d56b9470-3e2f-4bfc-bf27-21e8907ec9f0
+snyk-code >    Path: test/api/loginApiSpec.ts, line 64
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 641158cd-3b45-4c6e-a774-b5ced4a08c99
+snyk-code >    Path: test/api/loginApiSpec.ts, line 79
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 3b9b66e1-dc50-4613-999a-6588b79fa4cd
+snyk-code >    Path: test/api/loginApiSpec.ts, line 94
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b63da44c-184d-4615-90aa-8859ba066645
+snyk-code >    Path: test/api/loginApiSpec.ts, line 109
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c1e63715-fe91-4e0b-a8c5-9797785d5ecd
+snyk-code >    Path: test/api/loginApiSpec.ts, line 124
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 1efd6eab-e712-4b39-ab0f-947b05dc2db7
+snyk-code >    Path: test/api/loginApiSpec.ts, line 142
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 7d7ec6a8-3447-4e1a-acfd-fee6e4a616d4
+snyk-code >    Path: test/api/loginApiSpec.ts, line 245
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-os   > still running...
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: da665c96-d83d-4dbe-bd4a-ceb2201910e4
+snyk-code >    Path: test/api/loginApiSpec.ts, line 266
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: eaca18c6-2cde-4f5d-b876-d28914e51fac
+snyk-code >    Path: test/api/memoryApiSpec.ts, line 26
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 5e5900f9-f183-4c76-a5bc-3ed921a5f109
+snyk-code >    Path: test/api/memoryApiSpec.ts, line 64
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: a24ceebf-43e7-4802-bd5d-7d028af777c7
+snyk-code >    Path: routes/vulnCodeSnippet.ts, line 68
+snyk-code >    Info: The type of this object, coming from body and the value of its includes property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4d16469e-f88b-42ec-aa88-32c5c0ac3215
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 19
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 2f214441-cf7c-4338-9f44-1558082331fa
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 56
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: db80cb69-26a6-4333-9203-c4231981d04e
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 73
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 41318b41-6b03-42a1-a4a4-3e220681b96d
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 90
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d67665d2-d352-4748-b009-1994ce2e4f5b
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 109
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 53928418-4166-41d3-ba53-ad1694bdfb10
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 129
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 73807d7a-350b-4e2a-9481-f0456e8cd60b
+snyk-code >    Path: test/api/orderHistoryApiSpec.ts, line 149
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: e83cdf2b-3c3d-4b43-884a-78ff8db78229
+snyk-code >    Path: test/api/passwordApiSpec.ts, line 20
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 83b74d14-3a02-4b53-a26a-04efd268584e
+snyk-code >    Path: test/api/passwordApiSpec.ts, line 29
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c9f430be-f889-4a4d-991c-e45728c7e654
+snyk-code >    Path: test/api/passwordApiSpec.ts, line 47
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d2fcaa56-51d8-4fdb-9823-148cbfd951c1
+snyk-code >    Path: test/api/passwordApiSpec.ts, line 93
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: cdee0256-2989-483a-99d7-61431eb9cdec
+snyk-code >    Path: test/api/paymentApiSpec.ts, line 20
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 29a5e4ee-7c84-44de-87b2-798a07d535ac
+snyk-code >    Path: test/api/productReviewApiSpec.ts, line 111
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f08aec9e-900f-40a5-a838-fcd03f4f3823
+snyk-code >    Path: test/api/productReviewApiSpec.ts, line 131
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f64e1971-cdd8-42a1-9373-604588d786d6
+snyk-code >    Path: test/api/profileImageUploadSpec.ts, line 25
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 6531ee8f-cdd7-47f1-b85b-ca4a9ed3c223
+snyk-code >    Path: test/api/profileImageUploadSpec.ts, line 52
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 545b7ab7-3e82-4625-a002-3c922463e157
+snyk-code >    Path: test/api/profileImageUploadSpec.ts, line 97
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f9c927b9-9827-487e-8b26-6afceb8e54c7
+snyk-code >    Path: test/api/profileImageUploadSpec.ts, line 123
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 76ff88a6-e9c8-491a-8006-a7e88eaaef28
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 21
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 3e262d08-2f35-4919-b21f-cbfca6e82a35
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 38
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d9977ee2-b437-49bc-9cf1-78c1296c433c
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 55
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 13c9049c-d0a3-4e80-92ec-d99d4c07cf89
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 72
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: ec61222e-b93f-4445-baad-f769d7956bf8
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 93
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 3a296650-c784-4876-b01a-4aa15283827e
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 114
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 7889a8b8-8957-48bb-9211-c761c25a8e7a
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 137
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: ca2372ba-7b25-438e-a50f-c5c130007e18
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 155
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d6f03660-dd8d-4fa5-9abc-fee67d6c35ee
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 173
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d5765548-e3ec-4bc3-be63-d1d6d0ef2f8b
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 190
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: 7d862aa0-21a1-4ed7-8f9a-91dd076146b9
+snyk-code >    Path: routes/profileImageUrlUpload.ts, line 19
+snyk-code >    Info: The type of this object, coming from body and the value of its match property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: fe8fd120-8463-4288-a21a-a5a1820344bf
+snyk-code >    Path: test/cypress/e2e/forgedJwt.spec.ts, line 7
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 6541d641-8efd-485a-be6a-dd368a65a5de
+snyk-code >    Path: test/cypress/e2e/contact.spec.ts, line 11
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4fe5bbb3-5a0b-42d3-b341-5895bbb80030
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 269
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: cc7977cb-0fc6-4868-b991-fb99fd6f7d3a
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 292
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 6761d678-2957-48f5-b516-d0eb46bb47ac
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 309
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 7d83582b-3f9c-45df-aba0-71a19fcd9af0
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 326
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 9dba41f3-c19a-41f2-8816-4f60f084feef
+snyk-code >    Path: test/api/userApiSpec.ts, line 42
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 616b68d8-c87b-4f5f-80e2-b2d3e4ecba94
+snyk-code >    Path: test/api/userApiSpec.ts, line 60
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 1b4d5bfa-a75d-4521-9dfe-18e03366394c
+snyk-code >    Path: test/api/userApiSpec.ts, line 136
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: a27e68f4-c17c-4204-a465-85a415912d1f
+snyk-code >    Path: test/api/userApiSpec.ts, line 158
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 1a1fa630-1054-4bb8-b435-3cf2c8eacef7
+snyk-code >    Path: test/api/userApiSpec.ts, line 180
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 880ca58b-beec-4dca-abfe-cb03ef747332
+snyk-code >    Path: test/api/userApiSpec.ts, line 199
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: e08ba88b-59e4-4d78-ad41-3d1c2da042e5
+snyk-code >    Path: test/api/userApiSpec.ts, line 260
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 5bd21252-3433-4c22-beaf-e9efa27b9246
+snyk-code >    Path: test/api/userApiSpec.ts, line 271
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: a3b361b8-f080-4fee-98f2-584a44ec4e20
+snyk-code >    Path: test/api/userProfileSpec.ts, line 19
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: fd914daa-0219-443c-a29b-c3085f802b29
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 76
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4bef1b4f-0cac-43c2-88a8-c94b078fd511
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 120
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 39abf7bf-f289-46b0-923d-ed2e3ec5380a
+snyk-code >    Path: test/cypress/e2e/register.spec.ts, line 84
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: ba9a6476-d7a5-4400-9b8e-a489f8a2aae1
+snyk-code >    Path: routes/profileImageUrlUpload.ts, line 30
+snyk-code >    Info: The type of this object, coming from body and the value of its split property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: a6641a2b-48f7-4258-bf6b-0945a083016c
+snyk-code >    Path: routes/profileImageUrlUpload.ts, line 30
+snyk-code >    Info: The type of this object, coming from body and the value of its split property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4b45553e-b4c8-4323-a16a-8c20b46f023a
+snyk-code >    Path: test/cypress/e2e/administration.spec.ts, line 5
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: d5fefc20-53ea-46f6-a64d-9bfd856016c5
+snyk-code >    Path: test/cypress/e2e/b2bOrder.spec.ts, line 6
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: c7b8ee91-4400-466a-9da4-a2092e29b4d7
+snyk-code >    Path: test/cypress/e2e/b2bOrder.spec.ts, line 37
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 719c8d10-089f-47e0-879c-e311f9c4ed02
+snyk-code >    Path: test/cypress/e2e/basket.spec.ts, line 4
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b2f16c3a-9b20-439c-b861-efa4532843d5
+snyk-code >    Path: test/cypress/e2e/basket.spec.ts, line 76
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 367496c0-3e7c-4171-acee-0cdbf56cd9bc
+snyk-code >    Path: test/cypress/e2e/changePassword.spec.ts, line 6
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f1b372bc-9071-404d-827b-f94f60c25102
+snyk-code >    Path: test/cypress/e2e/changePassword.spec.ts, line 25
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 5a3bd430-a02b-477c-853e-8b48ae79a77c
+snyk-code >    Path: test/cypress/e2e/changePassword.spec.ts, line 31
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 9db84436-71ca-4509-954d-1610bfbaa41f
+snyk-code >    Path: test/cypress/e2e/chatbot.spec.ts, line 3
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 2d4d544e-4193-4767-b252-313329b8f355
+snyk-code >    Path: test/cypress/e2e/complain.spec.ts, line 5
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: fd9c1cc4-c485-4a5b-99e5-b31d78f17a0d
+snyk-code >    Path: test/api/web3Spec.ts, line 60
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 021bdf80-9e8c-41f7-a894-d7b141bb5669
+snyk-code >    Path: test/cypress/e2e/contact.spec.ts, line 47
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 723fff4c-d7ed-403d-8ed5-08b18300e070
+snyk-code >    Path: test/cypress/e2e/dataErasure.spec.ts, line 3
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 6e6b2c88-04b1-4864-a91f-54f71c84362b
+snyk-code >    Path: test/cypress/e2e/dataExport.spec.ts, line 24
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 1ad64be8-29f9-4afe-9e12-2a921c5ae518
+snyk-code >    Path: test/cypress/e2e/deluxe.spec.ts, line 4
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: cc8d66e5-e0b4-45b9-82b4-783c29f190d3
+snyk-code >    Path: test/cypress/e2e/deluxe.spec.ts, line 21
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 7a242d3d-9234-4eef-bcc1-318032bfd424
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 8
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 1c405154-e799-4c88-9ea2-aa5387e1156f
+snyk-code >    Path: test/cypress/e2e/noSql.spec.ts, line 53
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 36f22241-caed-49eb-a67b-d43af38b97ca
+snyk-code >    Path: test/cypress/e2e/profile.spec.ts, line 3
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 8f860b32-0901-4fdb-82bd-3459f25b7a5c
+snyk-code >    Path: test/cypress/e2e/register.spec.ts, line 10
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 20b0889d-24f8-469b-b3f9-31521853af9f
+snyk-code >    Path: test/cypress/e2e/restApi.spec.ts, line 4
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: ba164bff-8e3b-4d89-8866-691216d855e5
+snyk-code >    Path: test/cypress/e2e/restApi.spec.ts, line 82
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 098d32f6-9d98-4f1e-ab87-c121551e8111
+snyk-code >    Path: test/cypress/e2e/search.spec.ts, line 56
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 8f7fd9b6-5b1d-4481-8c23-de18f41cc0c8
+snyk-code >    Path: test/cypress/e2e/search.spec.ts, line 83
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: afffcf1b-1b89-4590-aa07-b6922b2d581a
+snyk-code >    Path: test/cypress/e2e/totpSetup.spec.ts, line 6
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: f4085608-e080-4698-a3fb-4dfa3fb77637
+snyk-code >    Path: test/cypress/e2e/totpSetup.spec.ts, line 20
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in login.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 6bbb673a-60d8-4a17-a3d8-0ac464834103
+snyk-code >    Path: test/api/web3Spec.ts, line 48
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: e06be231-8efe-4cff-b9ef-289500e0a542
+snyk-code >    Path: test/api/web3Spec.ts, line 36
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: b0c1e350-cf34-4693-8f83-c6f8efdaf9da
+snyk-code >    Path: test/api/web3Spec.ts, line 24
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: bdad60c3-4fb9-44af-a5b6-d5247feef478
+snyk-code >    Path: test/api/userApiSpec.ts, line 317
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 05f6dcee-0ed1-4895-b3b6-b6f1093e33af
+snyk-code >    Path: test/api/2faSpec.ts, line 434
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 63925826-1962-45fa-afe0-1dfd2d3af32f
+snyk-code >    Path: test/api/2faSpec.ts, line 433
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 916047e6-72a1-421f-bd74-b034e7e5840f
+snyk-code >    Path: test/api/2faSpec.ts, line 431
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 1f3a534c-9b25-4a37-9ecf-bba39b84c9d6
+snyk-code >    Path: test/api/2faSpec.ts, line 397
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 613be98e-8200-4488-9dd7-78aa7a62435b
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 207
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: f620ec75-fd4b-4f2f-a753-70e0ca20b2b5
+snyk-code >    Path: test/api/2faSpec.ts, line 396
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 5f474fa6-7756-4404-857b-e7a798a573d4
+snyk-code >    Path: test/api/2faSpec.ts, line 394
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 082f5582-eb9b-4adf-885f-c3a1217ffaa3
+snyk-code >    Path: test/api/2faSpec.ts, line 380
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 70a01327-6916-480d-b5a6-a9bb1a267e16
+snyk-code >    Path: test/api/2faSpec.ts, line 367
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 7fbb9bc2-1e76-4c94-a48d-4d332ca28104
+snyk-code >    Path: test/api/2faSpec.ts, line 365
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 7f96fd3b-f9c5-49cd-9532-b992b5f49223
+snyk-code >    Path: test/api/2faSpec.ts, line 353
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 3b91cfa7-1d24-4039-8235-cedbd8dadd70
+snyk-code >    Path: test/api/2faSpec.ts, line 337
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 3a5993ed-cab4-45cd-acef-6e923632996d
+snyk-code >    Path: test/api/2faSpec.ts, line 324
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 60e5c0cd-ed39-477b-beeb-0de01c995502
+snyk-code >    Path: test/api/quantityApiSpec.ts, line 228
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: c88ae062-f13c-4fd9-8396-4cc4dfbcb068
+snyk-code >    Path: test/api/2faSpec.ts, line 308
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: eb2dd705-beea-40eb-b0fc-7d68ade1a269
+snyk-code >    Path: test/api/2faSpec.ts, line 295
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 0a504688-8895-47a3-8324-801678bd01ed
+snyk-code >    Path: test/api/2faSpec.ts, line 279
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 1d6f157b-459a-49ba-b4b8-bedc2574abff
+snyk-code >    Path: test/api/2faSpec.ts, line 249
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: f0dcb565-83d1-4f03-b6f3-18f19aa81dee
+snyk-code >    Path: test/api/2faSpec.ts, line 233
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 45afae25-e6fd-40ec-8318-cb0f513f4842
+snyk-code >    Path: test/api/2faSpec.ts, line 170
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 29632cd6-2946-44e6-815e-05f148e54ca7
+snyk-code >    Path: test/api/2faSpec.ts, line 73
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: 94d4062a-1659-465d-9000-1c306655e845
+snyk-code >    Path: routes/vulnCodeSnippet.ts, line 67
+snyk-code >    Info: The type of this object, coming from body and the value of its length property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: 90fc0a77-6908-44e9-aea4-5ef643f1ac38
+snyk-code >    Path: server.ts, line 374
+snyk-code >    Info: The type of this object, coming from body and the value of its length property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: 7577cfe3-2e8d-48f8-86df-b01e0d7e76ad
+snyk-code >    Path: server.ts, line 374
+snyk-code >    Info: The type of this object, coming from body and the value of its length property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: f7d70415-e158-44bf-900a-9f81c52335d3
+snyk-code >    Path: server.ts, line 377
+snyk-code >    Info: The type of this object, coming from body and the value of its trim property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: 6acc15e9-4056-4d38-b02c-42129246eb1e
+snyk-code >    Path: server.ts, line 376
+snyk-code >    Info: The type of this object, coming from body and the value of its trim property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: 50fe9f66-65e8-4585-9e50-ba425cb0550c
+snyk-code >    Path: server.ts, line 375
+snyk-code >    Info: The type of this object, coming from body and the value of its trim property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [LOW] Improper Type Validation
+snyk-code >    Finding ID: e40b9c0d-637a-4af7-ad6f-c0bf354132ae
+snyk-code >    Path: routes/vulnCodeSnippet.ts, line 70
+snyk-code >    Info: The type of this object, coming from body and the value of its filter property can be controlled by the user. An attacker may craft the properties of the object to crash the application or bypass its logic. Consider checking the type of the object.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: 7db287a9-3a1c-4330-9ee1-79e0ce8274d7
+snyk-code >    Path: routes/videoHandler.ts, line 51
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 19de265c-6bb8-4f7c-b4cb-b641f09811b5
+snyk-code >    Path: frontend/src/app/oauth/oauth.component.spec.ts, line 85
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in passwordRepeat.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 3b512807-b39c-43b2-8ba8-8454026ff0c5
+snyk-code >    Path: frontend/src/app/Services/two-factor-auth-service.spec.ts, line 64
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Use of Hardcoded Passwords
+snyk-code >    Finding ID: b9683155-6943-4950-a89c-388845d4a718
+snyk-code >    Path: frontend/src/app/Services/two-factor-auth-service.spec.ts, line 80
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 4a36ffc3-b3ea-44ea-90b4-00396510008e
+snyk-code >    Path: frontend/src/app/oauth/oauth.component.spec.ts, line 85
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-Site Request Forgery (CSRF)
+snyk-code >    Finding ID: f6bfc011-77e2-4ef2-acea-b93ca09cff1b
+snyk-code >    Path: server.ts, line 96
+snyk-code >    Info: CSRF protection is disabled for your Express app. This allows the attackers to execute requests on a user's behalf.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 986516b7-cfd4-425b-98ef-9dbcdaa8295d
+snyk-code >    Path: frontend/src/app/about/about.component.ts, line 84
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 995ca8a3-6376-4966-bd60-0f6697a2db2e
+snyk-code >    Path: frontend/src/app/administration/administration.component.ts, line 50
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 593ef79c-59b5-4f18-8801-10bbc6beaf8d
+snyk-code >    Path: frontend/src/app/administration/administration.component.ts, line 65
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: de067e8f-13a4-4f0d-8a47-860c2e4f34cb
+snyk-code >    Path: frontend/src/app/data-export/data-export.component.ts, line 45
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 5a620314-98a0-497c-9988-9eaf9d5499fb
+snyk-code >    Path: frontend/src/app/score-board-legacy/score-board-legacy.component.ts, line 122
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 5a182ab1-5708-4b71-8de9-ad65229a2765
+snyk-code >    Path: frontend/src/app/score-board-legacy/score-board-legacy.component.ts, line 216
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: a2900ca6-6c07-4f23-8a20-bd0c8a9ecf69
+snyk-code >    Path: frontend/src/app/track-result/track-result.component.ts, line 41
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 64729db8-66b7-4bf7-8f70-e9f94f32198b
+snyk-code >    Path: frontend/src/app/last-login-ip/last-login-ip.component.ts, line 36
+snyk-code >    Info: Unsanitized input from browser storage flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Use of Hardcoded Passwords
+snyk-code >    Finding ID: 03a491a7-66e8-463e-801f-9acd20e1bbf3
+snyk-code >    Path: frontend/src/app/oauth/oauth.component.spec.ts, line 92
+snyk-code >    Info: Do not hardcode passwords in code. Found hardcoded password used in password.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Path Traversal
+snyk-code >    Finding ID: 5b2c1979-6e11-4723-876f-274f54699b04
+snyk-code >    Path: routes/languages.ts, line 27
+snyk-code >    Info: Unsanitized input from a local file flows into fs.readFile, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] DOM-based Cross-site Scripting (XSS)
+snyk-code >    Finding ID: a98e9d0e-dfed-417d-a8fd-2768d3746454
+snyk-code >    Path: frontend/src/app/data-export/data-export.component.ts, line 58
+snyk-code >    Info: Unsanitized input from data from a remote resource flows into write, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS).
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: 82a622cf-85bc-4451-95cf-50d2171c7657
+snyk-code >    Path: routes/dataErasure.ts, line 18
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: a34b7742-848c-4079-aa20-5a7751a0b237
+snyk-code >    Path: routes/dataErasure.ts, line 54
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Server-Side Request Forgery (SSRF)
+snyk-code >    Finding ID: 996dc35d-30cb-4c2f-a9ad-176d707e2311
+snyk-code >    Path: insights/apply-tags.py, line 27
+snyk-code >    Info: Unsanitized input from a command line argument flows into requests.request, where it is used as an URL to perform a request. This may result in a Server Side Request Forgery vulnerability.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: e5fc5631-c3dd-4940-bea2-b1f3c7bbc694
+snyk-code >    Path: routes/easterEgg.ts, line 13
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Prototype Pollution
+snyk-code >    Finding ID: 89198d55-cf63-433c-903e-6cb063b7c6a0
+snyk-code >    Path: routes/vulnCodeSnippet.ts, line 114
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into a member access and is used to access a property of this object by name. This may allow a malicious user to pollute the Object.prototype and cause a crash, remote code execution or logic bypasses.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Prototype Pollution
+snyk-code >    Finding ID: 0f05ae5a-fc30-4b28-9c9e-0b835a4d6dae
+snyk-code >    Path: routes/vulnCodeFixes.ts, line 91
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into a member access and is used to access a property of this object by name. This may allow a malicious user to pollute the Object.prototype and cause a crash, remote code execution or logic bypasses.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: 4d33f8de-973d-4437-b240-c868593a1cc6
+snyk-code >    Path: routes/languages.ts, line 11
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: 651eee49-7a4c-4b46-8eb6-780422c3a8d6
+snyk-code >    Path: routes/premiumReward.ts, line 13
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: cbe164c2-3c1c-446e-aadb-638df9a6afc5
+snyk-code >    Path: routes/privacyPolicyProof.ts, line 13
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: a35225e2-09ae-4399-85df-15d083da72d3
+snyk-code >    Path: routes/profileImageFileUpload.ts, line 16
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: 910d8086-3ee7-41aa-af68-5b2b2a2fb385
+snyk-code >    Path: routes/userProfile.ts, line 21
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: 14aea3b5-56f9-4481-ac1b-a8efd2132e6f
+snyk-code >    Path: routes/vulnCodeFixes.ts, line 69
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+snyk-code >    Finding ID: f6a4362d-fcbe-4d9a-9900-2fb7176c6695
+snyk-code >    Path: routes/vulnCodeSnippet.ts, line 74
+snyk-code >    Info: Expensive operation (a file system operation) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+snyk-code > 
+snyk-code >  ✗ [MEDIUM] Open Redirect
+snyk-code >    Finding ID: f4680037-d16b-4e82-9303-7bbd2c2d8a5a
+snyk-code >    Path: routes/redirect.ts, line 19
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into redirect, where it is used as input for request redirection. This may result in an Open Redirect vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] SQL Injection
+snyk-code >    Finding ID: 4bbe9179-9bb1-478d-8961-39d665eb7681
+snyk-code >    Path: data/static/codefixes/unionSqlInjectionChallenge_1.ts, line 6
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into query, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: e44a4727-047a-4a83-9891-402a2493e379
+snyk-code >    Path: routes/quarantineServer.ts, line 14
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into sendFile, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: f41ddf35-0c7e-4dec-929d-ad8171060077
+snyk-code >    Path: routes/logfileServer.ts, line 14
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into sendFile, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: bdc3dc19-2c2b-4871-995e-b1be9e43dc78
+snyk-code >    Path: routes/keyServer.ts, line 14
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into sendFile, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: c167ebed-1c81-4472-ade5-aa00444e4a98
+snyk-code >    Path: routes/profileImageFileUpload.ts, line 28
+snyk-code >    Info: Unsanitized input from cookies flows into fs.open, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to manipulate arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] NoSQL Injection
+snyk-code >    Finding ID: 3007de05-00e7-4b3b-90f3-5d8447c98e0e
+snyk-code >    Path: routes/updateProductReviews.ts, line 17
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into update, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] NoSQL Injection
+snyk-code >    Finding ID: ea75aae0-613d-44a3-be10-b67d733e0499
+snyk-code >    Path: routes/likeProductReviews.ts, line 41
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into update, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] NoSQL Injection
+snyk-code >    Finding ID: 63377a34-f134-4737-94a3-6de1ea90516e
+snyk-code >    Path: routes/likeProductReviews.ts, line 24
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into update, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] NoSQL Injection
+snyk-code >    Finding ID: 5b290037-5946-4375-a2aa-573620735854
+snyk-code >    Path: routes/likeProductReviews.ts, line 31
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into findOne, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] NoSQL Injection
+snyk-code >    Finding ID: 3a5c739e-056d-4eb8-8b18-57b5349248d3
+snyk-code >    Path: routes/likeProductReviews.ts, line 18
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into findOne, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: f402fa39-c33c-4494-b2ac-1f1eea3d3fd5
+snyk-code >    Path: routes/profileImageUrlUpload.ts, line 31
+snyk-code >    Info: Unsanitized input from cookies flows into fs.createWriteStream, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to write to arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: fd9dd7b9-1c63-41f7-91e8-53f7252c93b2
+snyk-code >    Path: routes/vulnCodeFixes.ts, line 80
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into fs.readFileSync, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 473b9508-accd-49fc-a7bd-0415ee767975
+snyk-code >    Path: lib/insecurity.ts, line 54
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in express-jwt.default.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: a86dd6f9-e4a9-4bd1-ab09-51637cafa461
+snyk-code >    Path: lib/insecurity.ts, line 23
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: b73e9c5b-6f61-4097-aade-68ee9d642bad
+snyk-code >    Path: frontend/src/app/last-login-ip/last-login-ip.component.spec.ts, line 50
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Non-Cryptographic Secret
+snyk-code >    Finding ID: 40b983e7-f534-40b1-94f9-63b2a28a2af0
+snyk-code >    Path: frontend/src/app/app.guard.spec.ts, line 40
+snyk-code >    Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: bfd58af7-8f18-4a5f-b964-4828ef6d3fb8
+snyk-code >    Path: routes/vulnCodeSnippet.ts, line 94
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into fs.default.readFileSync, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] SQL Injection
+snyk-code >    Finding ID: 991fdb60-48eb-4b6f-809c-42f959bc11a7
+snyk-code >    Path: data/static/codefixes/dbSchemaChallenge_1.ts, line 5
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into query, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Arbitrary File Write via Archive Extraction (Zip Slip)
+snyk-code >    Finding ID: 995b6041-657f-4abe-94d6-1fb1a01d01d1
+snyk-code >    Path: routes/fileUpload.ts, line 42
+snyk-code >    Info: Unsanitized input from Unzipper library flows into fs.createWriteStream, where it is used as a path after been extracted from a zip file. This may result in a Zip Slip vulnerability and allow an attacker to write to arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: c3f56e97-448e-4c6d-8769-fcce2f0bb2ea
+snyk-code >    Path: routes/userProfile.ts, line 65
+snyk-code >    Info: Unsanitized input from cookies flows into send, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [HIGH] SQL Injection
+snyk-code >    Finding ID: a4a5ebe7-a885-4dde-b74b-47996acc9d6d
+snyk-code >    Path: data/static/codefixes/unionSqlInjectionChallenge_3.ts, line 10
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into query, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Path Traversal
+snyk-code >    Finding ID: c01b4a98-d050-402b-87a6-430fa16c2417
+snyk-code >    Path: routes/fileServer.ts, line 33
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into sendFile, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: d5cc0cb0-478a-47ee-8154-d769e9d31b8a
+snyk-code >    Path: routes/recycles.ts, line 17
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into send, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [HIGH] Cross-site Scripting (XSS)
+snyk-code >    Finding ID: 2f96cde8-21e8-497d-8006-ad59d4334bee
+snyk-code >    Path: frontend/src/app/search-result/search-result.component.ts, line 151
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into bypassSecurityTrustHtml, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+snyk-code > 
+snyk-code >  ✗ [HIGH] Server-Side Request Forgery (SSRF)
+snyk-code >    Finding ID: e18e74f3-1107-4e1f-bef5-1f65287526ab
+snyk-code >    Path: routes/profileImageUrlUpload.ts, line 22
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into request.get, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] SQL Injection
+snyk-code >    Finding ID: c5213637-67d2-4a34-956f-16758624e13e
+snyk-code >    Path: routes/login.ts, line 36
+snyk-code >    Info: Unsanitized input from the HTTP request body flows into query, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] SQL Injection
+snyk-code >    Finding ID: 813dab97-e936-4d6b-937d-9d46d4ac3576
+snyk-code >    Path: routes/search.ts, line 23
+snyk-code >    Info: Unsanitized input from an HTTP parameter flows into query, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Secret
+snyk-code >    Finding ID: 65e34207-33e3-4cb2-a17f-2e260d01e39c
+snyk-code >    Path: lib/insecurity.ts, line 44
+snyk-code >    Info: Hardcoded value is used as a cipher key (in crypto.default.createHmac). Generate the value with a cryptographically strong random number generator and do not hardcode it in source code.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Secret
+snyk-code >    Finding ID: f532ae47-841c-4a06-b06d-8b0595ae2b11
+snyk-code >    Path: lib/insecurity.ts, line 23
+snyk-code >    Info: Hardcoded value is used as a cipher key (in crypto.default.createHmac). Generate the value with a cryptographically strong random number generator and do not hardcode it in source code.
+snyk-code > 
+snyk-code >  ✗ [HIGH] Hardcoded Secret
+snyk-code >    Finding ID: 566998ce-a6fe-46c2-b805-89bb1fe85307
+snyk-code >    Path: lib/insecurity.ts, line 22
+snyk-code >    Info: Hardcoded value is used as a cipher key (in jsonwebtoken.default.verify). Generate the value with a cryptographically strong random number generator and do not hardcode it in source code.
+snyk-code > 
+snyk-code > 
+snyk-code > 
+snyk-code > ╭──────────────────────────────────────────────────────────────────╮
+snyk-code > │ Test Summary                                                     │
+snyk-code > │                                                                  │
+snyk-code > │   Organization:      snyk-certification-wagner-martins           │
+snyk-code > │   Test type:         Static code analysis                        │
+snyk-code > │   Project path:      /builds/wagnerm-Duranium/juice-shop-goof    │
+snyk-code > │                                                                  │
+snyk-code > │   Total issues:   276                                            │
+snyk-code > │   Ignored issues: 0 [ 0 HIGH  0 MEDIUM  0 LOW ]                  │
+snyk-code > │   Open issues:    276 [ 30 HIGH  31 MEDIUM  215 LOW ]            │
+snyk-code > ╰──────────────────────────────────────────────────────────────────╯
+snyk-code >     
+snyk-code > 💡 Tip
+snyk-code > 
+snyk-code >    To view ignored issues, use the --include-ignores option.
+snyk-code >                                                             
+snyk-code > 
+snyk-code finished in 40 s  WARN 1 
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > npm warn deprecated samsam@1.1.2: This package has been deprecated in favour of @sinonjs/samsam
+snyk-os   > npm warn deprecated eivindfjeldstad-dot@0.0.1: Use @eivifj/dot instead
+snyk-os   > npm warn deprecated formatio@1.1.1: This package is unmaintained. Use @sinonjs/formatio instead
+snyk-os   > npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+snyk-os   > npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+snyk-os   > npm warn deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+snyk-os   > npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+snyk-os   > npm warn deprecated fstream@1.0.12: This package is no longer supported.
+snyk-os   > npm warn deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+snyk-os   > npm warn deprecated lodash.get@4.4.2: This package is deprecated. Use the optional chaining (?.) operator instead.
+snyk-os   > npm warn deprecated har-validator@5.1.5: this library is no longer supported
+snyk-os   > npm warn deprecated are-we-there-yet@1.1.7: This package is no longer supported.
+snyk-os   > npm warn deprecated @otplib/plugin-thirty-two@12.0.1: Please upgrade to v13 of otplib. Refer to otplib docs for migration paths
+snyk-os   > npm warn deprecated @otplib/preset-default@12.0.1: Please upgrade to v13 of otplib. Refer to otplib docs for migration paths
+snyk-os   > npm warn deprecated @otplib/plugin-crypto@12.0.1: Please upgrade to v13 of otplib. Refer to otplib docs for migration paths
+snyk-os   > npm warn deprecated gauge@2.7.4: This package is no longer supported.
+snyk-os   > npm warn deprecated jws@0.2.6: Security update: Versions below 3.0.0 are deprecated.
+snyk-os   > npm warn deprecated whatwg-encoding@1.0.5: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+snyk-os   > npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+snyk-os   > npm warn deprecated domexception@2.0.1: Use your platform's native DOMException instead
+snyk-os   > npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+snyk-os   > npm warn deprecated vm2@3.9.17: The library contains critical security issues and should not be used for production! The maintenance of the project has been discontinued. Consider migrating your code to isolated-vm.
+snyk-os   > npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+snyk-os   > npm warn deprecated sane@4.1.0: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+snyk-os   > npm warn deprecated npmlog@4.1.2: This package is no longer supported.
+snyk-os   > npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+snyk-os   > npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+snyk-os   > npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+snyk-os   > npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+snyk-os   > npm warn deprecated ecstatic@3.3.2: This package is unmaintained and deprecated. See the GH Issue 259.
+snyk-os   > npm warn deprecated osenv@0.1.5: This package is no longer supported.
+snyk-os   > npm warn deprecated jsonwebtoken@0.4.0: Critical vulnerability fix in v5.0.0. See https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/
+snyk-os   > npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+snyk-os   > npm warn deprecated multer@1.4.5-lts.2: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
+snyk-os   > npm warn deprecated notevil@1.3.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+snyk-os   > npm warn deprecated eslint-config-standard-with-typescript@39.1.1: Please use eslint-config-love, instead.
+snyk-os   > npm warn deprecated @types/cypress@1.1.6: This is a stub types definition. cypress provides its own type definitions, so you do not need this installed.
+snyk-os   > npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+snyk-os   > npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+snyk-os   > npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+snyk-os   > npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+snyk-os   > npm warn deprecated node-pre-gyp@0.15.0: Please upgrade to @mapbox/node-pre-gyp: the non-scoped node-pre-gyp package is deprecated and only the @mapbox scoped package will recieve updates in the future
+snyk-os   > npm warn deprecated gauge@4.0.4: This package is no longer supported.
+snyk-os   > npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+snyk-os   > npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+snyk-os   > npm warn deprecated messageformat@2.3.0: Package renamed as '@messageformat/core', see messageformat.github.io for more details. 'messageformat@4' will eventually provide a polyfill for Intl.MessageFormat, once it's been defined by Unicode & ECMA.
+snyk-os   > npm warn deprecated gauge@3.0.2: This package is no longer supported.
+snyk-os   > npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+snyk-os   > npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+snyk-os   > npm warn deprecated glob@7.1.6: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+snyk-os   > npm warn deprecated glob@7.1.7: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+snyk-os   > npm warn deprecated jsonwebtoken@0.1.0: Critical vulnerability fix in v5.0.0. See https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/
+snyk-os   > npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+snyk-os   > npm warn deprecated tar@4.4.19: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+snyk-os   > npm warn deprecated iltorb@2.4.5: The zlib module provides APIs for brotli compression/decompression starting with Node.js v10.16.0, please use it over iltorb
+snyk-os   > npm warn deprecated sinon@1.17.7: 16.1.1
+snyk-os   > npm warn deprecated sinon@11.1.2: 16.1.1
+snyk-os   > npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > 
+snyk-os   > added 2064 packages, and audited 2065 packages in 4m
+snyk-os   > 
+snyk-os   > 225 packages are looking for funding
+snyk-os   >   run `npm fund` for details
+snyk-os   > 
+snyk-os   > 71 vulnerabilities (2 low, 32 moderate, 25 high, 12 critical)
+snyk-os   > 
+snyk-os   > To address issues that do not require attention, run:
+snyk-os   >   npm audit fix
+snyk-os   > 
+snyk-os   > To address all issues possible (including breaking changes), run:
+snyk-os   >   npm audit fix --force
+snyk-os   > 
+snyk-os   > Some issues need review, and may require choosing
+snyk-os   > a different dependency.
+snyk-os   > 
+snyk-os   > Run `npm audit` for details.
+snyk-os   $ snyk monitor --project-name=$CI_PROJECT_NAME
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > 
+snyk-os   > Monitoring /builds/wagnerm-Duranium/juice-shop-goof (juice-shop)...
+snyk-os   > 
+snyk-os   > Explore this snapshot at https://app.us.snyk.io/org/snyk-certification-wagner-martins/project/72c0ef97-a78c-48e8-ae65-76d389c8322f/history/b46ca481-6158-488b-9f0b-3aca0e8aecd0
+snyk-os   > 
+snyk-os   > Tip: Detected multiple supported manifests (1), use --all-projects to scan all of them at once.
+snyk-os   > 
+snyk-os   > Notifications about newly disclosed issues related to these dependencies will be emailed to you.
+snyk-os   > 
+snyk-os   $ snyk test
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > still running...
+snyk-os   > 
+snyk-os   > Testing /builds/wagnerm-Duranium/juice-shop-goof...
+snyk-os   > 
+snyk-os   > Tested 1016 dependencies for known issues, found 68 issues, 100 vulnerable paths.
+snyk-os   > 
+snyk-os   > 
+snyk-os   > Issues to fix by upgrading:
+snyk-os   > 
+snyk-os   >   Upgrade check-dependencies@1.1.1 to check-dependencies@2.0.0 to fix
+snyk-os   >   ✗ Inefficient Regular Expression Complexity [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-MICROMATCH-6838728] in micromatch@3.1.10
+snyk-os   >     introduced by check-dependencies@1.1.1 > findup-sync@2.0.0 > micromatch@3.1.10
+snyk-os   >   ✗ Excessive Platform Resource Consumption within a Loop [High Severity][https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727] in braces@2.3.2
+snyk-os   >     introduced by check-dependencies@1.1.1 > findup-sync@2.0.0 > micromatch@3.1.10 > braces@2.3.2
+snyk-os   >   ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-UNSETVALUE-2400660] in unset-value@1.0.0
+snyk-os   >     introduced by check-dependencies@1.1.1 > findup-sync@2.0.0 > micromatch@3.1.10 > braces@2.3.2 > snapdragon@0.8.2 > base@0.11.2 > cache-base@1.0.1 > unset-value@1.0.0
+snyk-os   > 
+snyk-os   >   Upgrade express-jwt@0.1.3 to express-jwt@7.7.8 to fix
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Low Severity][https://security.snyk.io/vuln/npm:moment:20170905] in moment@2.0.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+snyk-os   >   ✗ Improper Authentication [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180022] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Improper Restriction of Security Token Assignment [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180024] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Use of a Broken or Risky Cryptographic Algorithm [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180026] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/npm:moment:20160126] in moment@2.0.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/npm:moment:20161019] in moment@2.0.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+snyk-os   >   ✗ Authorization Bypass [High Severity][https://security.snyk.io/vuln/SNYK-JS-EXPRESSJWT-575022] in express-jwt@0.1.3
+snyk-os   >     introduced by express-jwt@0.1.3
+snyk-os   >   ✗ Authentication Bypass [High Severity][https://security.snyk.io/vuln/npm:jsonwebtoken:20150331] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Improper Verification of Cryptographic Signature [High Severity][https://security.snyk.io/vuln/SNYK-JS-JWS-14188253] in jws@0.2.6
+snyk-os   >     introduced by jsonwebtoken@0.4.0 > jws@0.2.6 and 1 other path(s)
+snyk-os   >   ✗ Forgeable Public/Private Tokens [High Severity][https://security.snyk.io/vuln/npm:jws:20160726] in jws@0.2.6
+snyk-os   >     introduced by jsonwebtoken@0.4.0 > jws@0.2.6 and 1 other path(s)
+snyk-os   >   ✗ Directory Traversal [High Severity][https://security.snyk.io/vuln/SNYK-JS-MOMENT-2440688] in moment@2.0.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+snyk-os   >   ✗ Uninitialized Memory Exposure [High Severity][https://security.snyk.io/vuln/npm:base64url:20180511] in base64url@0.0.6
+snyk-os   >     introduced by jsonwebtoken@0.4.0 > jws@0.2.6 > base64url@0.0.6 and 3 other path(s)
+snyk-os   > 
+snyk-os   >   Upgrade glob@7.2.3 to glob@12.0.0 to fix
+snyk-os   >   ✗ Missing Release of Resource after Effective Lifetime [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-INFLIGHT-6095116] in inflight@1.0.6
+snyk-os   >     introduced by glob@7.2.3 > inflight@1.0.6 and 7 other path(s)
+snyk-os   > 
+snyk-os   >   Upgrade i18n@0.11.1 to i18n@0.14.0 to fix
+snyk-os   >   ✗ Prototype Pollution [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-MESSAGEFORMAT-13109646] in messageformat@2.3.0
+snyk-os   >     introduced by i18n@0.11.1 > messageformat@2.3.0
+snyk-os   > 
+snyk-os   >   Upgrade jsonwebtoken@0.4.0 to jsonwebtoken@9.0.0 to fix
+snyk-os   >   ✗ Improper Authentication [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180022] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Improper Restriction of Security Token Assignment [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180024] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Use of a Broken or Risky Cryptographic Algorithm [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180026] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Authentication Bypass [High Severity][https://security.snyk.io/vuln/npm:jsonwebtoken:20150331] in jsonwebtoken@0.1.0
+snyk-os   >     introduced by express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path(s)
+snyk-os   >   ✗ Improper Verification of Cryptographic Signature [High Severity][https://security.snyk.io/vuln/SNYK-JS-JWS-14188253] in jws@0.2.6
+snyk-os   >     introduced by jsonwebtoken@0.4.0 > jws@0.2.6 and 1 other path(s)
+snyk-os   >   ✗ Forgeable Public/Private Tokens [High Severity][https://security.snyk.io/vuln/npm:jws:20160726] in jws@0.2.6
+snyk-os   >     introduced by jsonwebtoken@0.4.0 > jws@0.2.6 and 1 other path(s)
+snyk-os   >   ✗ Uninitialized Memory Exposure [High Severity][https://security.snyk.io/vuln/npm:base64url:20180511] in base64url@0.0.6
+snyk-os   >     introduced by jsonwebtoken@0.4.0 > jws@0.2.6 > base64url@0.0.6 and 3 other path(s)
+snyk-os   > 
+snyk-os   >   Upgrade libxmljs2@0.33.0 to libxmljs2@0.35.0 to fix
+snyk-os   >   ✗ Missing Release of Resource after Effective Lifetime [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-INFLIGHT-6095116] in inflight@1.0.6
+snyk-os   >     introduced by glob@7.2.3 > inflight@1.0.6 and 7 other path(s)
+snyk-os   >   ✗ Directory Traversal (new) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-TAR-15032660] in tar@6.2.1
+snyk-os   >     introduced by sqlite3@5.1.7 > tar@6.2.1 and 4 other path(s)
+snyk-os   >   ✗ Improper Handling of Unicode Encoding (new) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-TAR-15038581] in tar@6.2.1
+snyk-os   >     introduced by sqlite3@5.1.7 > tar@6.2.1 and 4 other path(s)
+snyk-os   >   ✗ Directory Traversal (new) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-TAR-15127355] in tar@6.2.1
+snyk-os   >     introduced by sqlite3@5.1.7 > tar@6.2.1 and 4 other path(s)
+snyk-os   > 
+snyk-os   >   Upgrade multer@1.4.5-lts.2 to multer@2.0.2 to fix
+snyk-os   >   ✗ Uncaught Exception [High Severity][https://security.snyk.io/vuln/SNYK-JS-MULTER-10773732] in multer@1.4.5-lts.2
+snyk-os   >     introduced by multer@1.4.5-lts.2
+snyk-os   >   ✗ Uncaught Exception [High Severity][https://security.snyk.io/vuln/SNYK-JS-MULTER-10185673] in multer@1.4.5-lts.2
+snyk-os   >     introduced by multer@1.4.5-lts.2
+snyk-os   >   ✗ Missing Release of Memory after Effective Lifetime [High Severity][https://security.snyk.io/vuln/SNYK-JS-MULTER-10185675] in multer@1.4.5-lts.2
+snyk-os   >     introduced by multer@1.4.5-lts.2
+snyk-os   >   ✗ Uncaught Exception [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-MULTER-10299078] in multer@1.4.5-lts.2
+snyk-os   >     introduced by multer@1.4.5-lts.2
+snyk-os   > 
+snyk-os   >   Upgrade pdfkit@0.11.0 to pdfkit@0.12.2 to fix
+snyk-os   >   ✗ Use of Weak Hash [High Severity][https://security.snyk.io/vuln/SNYK-JS-CRYPTOJS-6028119] in crypto-js@3.3.0
+snyk-os   >     introduced by pdfkit@0.11.0 > crypto-js@3.3.0
+snyk-os   > 
+snyk-os   >   Upgrade sanitize-html@1.4.2 to sanitize-html@2.12.1 to fix
+snyk-os   >   ✗ Information Exposure [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-6256334] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-2957526] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Validation Bypass [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-1070780] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Access Restriction Bypass [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-1070786] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Cross-site Scripting (XSS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-585892] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Cross-site Scripting (XSS) [Medium Severity][https://security.snyk.io/vuln/npm:sanitize-html:20161026] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-1018905] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-73639] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Prototype Pollution [Medium Severity][https://security.snyk.io/vuln/npm:lodash:20180130] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Cross-site Scripting (XSS) [Medium Severity][https://security.snyk.io/vuln/npm:sanitize-html:20141024] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Cross-site Scripting (XSS) [Medium Severity][https://security.snyk.io/vuln/npm:sanitize-html:20160801] in sanitize-html@1.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2
+snyk-os   >   ✗ Code Injection [High Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-1040724] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-450202] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-608086] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-6139239] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   >   ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-LODASH-73638] in lodash@2.4.2
+snyk-os   >     introduced by sanitize-html@1.4.2 > lodash@2.4.2
+snyk-os   > 
+snyk-os   >   Upgrade socket.io@3.1.2 to socket.io@4.8.0 to fix
+snyk-os   >   ✗ Cross-site Scripting (XSS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-COOKIE-8163060] in cookie@0.4.2
+snyk-os   >     introduced by socket.io@3.1.2 > engine.io@4.1.2 > cookie@0.4.2
+snyk-os   >   ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-WS-7266574] in ws@7.4.6
+snyk-os   >     introduced by socket.io@3.1.2 > engine.io@4.1.2 > ws@7.4.6
+snyk-os   >   ✗ Uncaught Exception [High Severity][https://security.snyk.io/vuln/SNYK-JS-SOCKETIO-7278048] in socket.io@3.1.2
+snyk-os   >     introduced by socket.io@3.1.2
+snyk-os   >   ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-SOCKETIOPARSER-5596892] in socket.io-parser@4.0.5
+snyk-os   >     introduced by socket.io@3.1.2 > socket.io-parser@4.0.5
+snyk-os   >   ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-ENGINEIO-3136336] in engine.io@4.1.2
+snyk-os   >     introduced by socket.io@3.1.2 > engine.io@4.1.2
+snyk-os   > 
+snyk-os   >   Upgrade unzipper@0.9.15 to unzipper@0.12.1 to fix
+snyk-os   >   ✗ Missing Release of Resource after Effective Lifetime [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-INFLIGHT-6095116] in inflight@1.0.6
+snyk-os   >     introduced by glob@7.2.3 > inflight@1.0.6 and 7 other path(s)
+snyk-os   > 
+snyk-os   > 
+snyk-os   > Issues with no direct upgrade or patch:
+snyk-os   >   ✗ Arbitrary File Write via Archive Extraction (Zip Slip) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-DECOMPRESSTAR-559095] in decompress-tar@4.1.1
+snyk-os   >     introduced by download@8.0.0 > decompress@4.2.1 > decompress-tar@4.1.1 and 2 other path(s)
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Prototype Pollution [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-EIVINDFJELDSTADDOT-564434] in eivindfjeldstad-dot@0.0.1
+snyk-os   >     introduced by yaml-schema-validator@1.2.3 > validate@4.5.1 > eivindfjeldstad-dot@0.0.1
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Predictable Value Range from Previous Values [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-FORMDATA-10841150] in form-data@2.3.3
+snyk-os   >     introduced by request@2.88.2 > form-data@2.3.3
+snyk-os   >   This issue was fixed in versions: 2.5.4, 3.0.4, 4.0.4
+snyk-os   >   ✗ Open Redirect [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-GOT-2932019] in got@8.3.2
+snyk-os   >     introduced by download@8.0.0 > got@8.3.2
+snyk-os   >   This issue was fixed in versions: 11.8.5, 12.1.0
+snyk-os   >   ✗ Information Exposure [Low Severity][https://security.snyk.io/vuln/SNYK-JS-HBS-1566555] in hbs@4.2.0
+snyk-os   >     introduced by hbs@4.2.0
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-HTTPCACHESEMANTICS-3248783] in http-cache-semantics@3.8.1
+snyk-os   >     introduced by download@8.0.0 > got@8.3.2 > cacheable-request@2.1.4 > http-cache-semantics@3.8.1
+snyk-os   >   This issue was fixed in versions: 4.1.1
+snyk-os   >   ✗ Type Confusion [High Severity][https://security.snyk.io/vuln/SNYK-JS-LIBXMLJS2-6808810] in libxmljs2@0.33.0
+snyk-os   >     introduced by libxmljs2@0.33.0
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Type Confusion [High Severity][https://security.snyk.io/vuln/SNYK-JS-LIBXMLJS2-6808816] in libxmljs2@0.33.0
+snyk-os   >     introduced by libxmljs2@0.33.0
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-LODASHSET-1320032] in lodash.set@4.3.2
+snyk-os   >     introduced by grunt-replace-json@0.1.0 > lodash.set@4.3.2
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Arbitrary Code Injection [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-MARSDB-480405] in marsdb@0.6.11
+snyk-os   >     introduced by marsdb@0.6.11
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Sandbox Bypass [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-NOTEVIL-2385946] in notevil@1.3.3
+snyk-os   >     introduced by notevil@1.3.3
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JS-QS-14724253] in qs@6.5.3
+snyk-os   >     introduced by request@2.88.2 > qs@6.5.3
+snyk-os   >   This issue was fixed in versions: 6.14.1
+snyk-os   >   ✗ Server-side Request Forgery (SSRF) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-REQUEST-3361831] in request@2.88.2
+snyk-os   >     introduced by request@2.88.2
+snyk-os   >   No upgrade or patch available
+snyk-os   >   ✗ Uncontrolled Resource Consumption ('Resource Exhaustion') [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-TAR-6476909] in tar@4.4.19
+snyk-os   >     introduced by node-pre-gyp@0.15.0 > tar@4.4.19
+snyk-os   >   This issue was fixed in versions: 6.2.1
+snyk-os   >   ✗ Prototype Pollution [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-TOUGHCOOKIE-5672873] in tough-cookie@2.5.0
+snyk-os   >     introduced by request@2.88.2 > tough-cookie@2.5.0
+snyk-os   >   This issue was fixed in versions: 4.1.3
+snyk-os   >   ✗ Improper Control of Dynamically-Managed Code Resources [High Severity][https://security.snyk.io/vuln/SNYK-JS-VM2-15116160] in vm2@3.9.17
+snyk-os   >     introduced by juicy-chat-bot@0.8.0 > vm2@3.9.17
+snyk-os   >   This issue was fixed in versions: 3.10.2
+snyk-os   >   ✗ Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection') [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-VM2-5537079] in vm2@3.9.17
+snyk-os   >     introduced by juicy-chat-bot@0.8.0 > vm2@3.9.17
+snyk-os   >   This issue was fixed in versions: 3.9.18
+snyk-os   >   ✗ Sandbox Bypass [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-VM2-5537100] in vm2@3.9.17
+snyk-os   >     introduced by juicy-chat-bot@0.8.0 > vm2@3.9.17
+snyk-os   >   This issue was fixed in versions: 3.9.18
+snyk-os   >   ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-VM2-5772823] in vm2@3.9.17
+snyk-os   >     introduced by juicy-chat-bot@0.8.0 > vm2@3.9.17
+snyk-os   >   This issue was fixed in versions: 3.10.0
+snyk-os   >   ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-VM2-5772825] in vm2@3.9.17
+snyk-os   >     introduced by juicy-chat-bot@0.8.0 > vm2@3.9.17
+snyk-os   >   This issue was fixed in versions: 3.10.0
+snyk-os   >   ✗ Insecure Credential Storage [Low Severity][https://security.snyk.io/vuln/SNYK-JS-WEB3-174533] in web3@4.16.0
+snyk-os   >     introduced by web3@4.16.0
+snyk-os   >   No upgrade or patch available
+snyk-os   > 
+snyk-os   > 
+snyk-os   > License issues:
+snyk-os   > 
+snyk-os   >   ✗ 0BSD license [Medium Severity][https://us.snyk.io/vuln/snyk:lic:npm:tslib:0BSD] in tslib@1.14.1
+snyk-os   >     introduced by concurrently@5.3.0 > rxjs@6.6.7 > tslib@1.14.1 and 2 other path(s)
+snyk-os   > 
+snyk-os   > 
+snyk-os   > 
+snyk-os   > Organization:      snyk-certification-wagner-martins
+snyk-os   > Package manager:   npm
+snyk-os   > Target file:       package.json
+snyk-os   > Project name:      juice-shop
+snyk-os   > Open source:       no
+snyk-os   > Project path:      /builds/wagnerm-Duranium/juice-shop-goof
+snyk-os   > Licenses:          enabled
+snyk-os   > 
+snyk-os   > Tip: Detected multiple supported manifests (1), use --all-projects to scan all of them at once.
+snyk-os   > 
+snyk-os   > 
+snyk-os   finished in 6.23 min  WARN 1 
+
+ WARN  snyk-os    pre_script
+  > Project path:      /builds/wagnerm-Duranium/juice-shop-goof
+  > Licenses:          enabled
+  > Tip: Detected multiple supported manifests (1), use --all-projects to scan all of them at once.
+ WARN  snyk-code  pre_script
+  > 💡 Tip
+  >    To view ignored issues, use the --include-ignores option.
+  >                                                             
+pipeline finished in 6.23 min
